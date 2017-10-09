@@ -1,4 +1,4 @@
-# Facebook LikeBox on Popup and Sidebar 
+# Facebook LikeBox on Popup and Sidebar - Magento 1 Extension
 
 Facebook Like Box is a way to promote your Facebook page on your website. It allows admins to promote their Pages and embed a simple feed of content from a Page into other sites.
 
