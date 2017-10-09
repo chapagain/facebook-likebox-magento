@@ -1,0 +1,24 @@
+<?php if ($this->helper('facebooklikeboxpopup')->getIsEnableSidebar()): ?>
+
+<?php 
+$popupText = $this->helper('facebooklikeboxpopup')->getPopupTextSidebar();
+?>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=420745254777922";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="block block-subscribe">
+    <div class="block-title">
+        <strong><span><?php echo $this->__($this->helper('facebooklikeboxpopup')->getPopupTextSidebar()) ?></span></strong>
+    </div>
+    
+    <div class="fb-page" data-href="<?php echo $this->helper('facebooklikeboxpopup')->getFbLinkSidebar() ?>" data-width="<?php echo $this->helper('facebooklikeboxpopup')->getPopupWidthSidebar() ?>" data-height="<?php echo $this->helper('facebooklikeboxpopup')->getPopupHeightSidebar() ?>" data-small-header="<?php echo $this->helper('facebooklikeboxpopup')->getShowHeaderSidebar() ?>" data-adapt-container-width="<?php echo $this->helper('facebooklikeboxpopup')->getAdaptContainerWidthSidebar() ?>" data-hide-cover="<?php echo $this->helper('facebooklikeboxpopup')->getHideCoverPhotoSidebar() ?>" data-show-facepile="<?php echo $this->helper('facebooklikeboxpopup')->getShowFacesSidebar() ?>" data-show-posts="<?php echo $this->helper('facebooklikeboxpopup')->getShowStreamSidebar() ?>"><div class="fb-xfbml-parse-ignore"><blockquote cite="<?php echo $this->helper('facebooklikeboxpopup')->getFbLinkSidebar() ?>"><a href="<?php echo $this->helper('facebooklikeboxpopup')->getFbLinkSidebar() ?>"><?php echo $this->helper('facebooklikeboxpopup')->getFbNameSidebar() ?></a></blockquote></div></div>
+</div>
+
+<?php endif; ?>
